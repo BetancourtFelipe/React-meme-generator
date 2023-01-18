@@ -1,23 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
+import './style.css';
+
+const imgUrl =
+  'https://api.memegen.link/images/buzz/memes/memes_everywhere.gif';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        <header>MEME GENERATOR</header>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <input></input>
+        <br />
+        <br />
+        <br />
+
+        <img
+          src="https://api.memegen.link/images/buzz/memes/memes_everywhere.gif"
+          alt="meme"
+        />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <input></input>
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <button>Genetare</button>
+
+        <button>Download</button>
+      </div>
     </div>
   );
 }
