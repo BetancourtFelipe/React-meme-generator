@@ -1,47 +1,13 @@
 import './App.css';
-import './style.css';
-
-const imgUrl =
-  'https://api.memegen.link/images/buzz/memes/memes_everywhere.gif';
+import Header from './Header';
+import MemeGenerator from './MemeGenerator';
 
 function App() {
   return (
     <div>
-      <div>
-        <header>MEME GENERATOR</header>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <input></input>
-        <br />
-        <br />
-        <br />
-
-        <img
-          src="https://api.memegen.link/images/buzz/memes/memes_everywhere.gif"
-          alt="meme"
-        />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-
-        <input></input>
-        <br />
-        <br />
-        <br />
-        <br />
-
-        <button>Genetare</button>
-
-        <button>Download</button>
-      </div>
+      <Header />
+      <MemeGenerator />
     </div>
   );
 }
-
 export default App;
