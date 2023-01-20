@@ -1,11 +1,11 @@
-import './index.css';
+import './style.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
 function MemeGenerator() {
   const [topText, setTopText] = useState('');
   const [bottomText, setBottomText] = useState('');
-  const [memeKey, setMemeKey] = useState('aag');
+  const [memeKey, setMemeKey] = useState('');
   const [randomImg, setRandomImg] = useState(
     'https://api.memegen.link/images/aag.png',
   );
@@ -52,7 +52,6 @@ function MemeGenerator() {
     <div>
       <form className="meme-form">
         <input
-          type="text"
           name="topText"
           placeholder="Top Text"
           value={topText}
@@ -61,7 +60,6 @@ function MemeGenerator() {
           }}
         />
         <input
-          type="text"
           name="bottomText"
           placeholder="Bottom Text"
           value={bottomText}
@@ -79,9 +77,8 @@ function MemeGenerator() {
         </button>
       </form>
       <div className="meme">
+        <img src={randomImg} alt="Meme" width="auto" height="auto" />
         <h2 className="top">{topText}</h2>
-        <img src={randomImg} alt="Meme" max-width="100%" height="auto" />
-
         <h2 className="bottom">{bottomText}</h2>
       </div>
     </div>

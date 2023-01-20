@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(124, 3, 52);
+  background-color: rgb(11, 34, 45);
   margin: 0;
   display: flex;
   align-items: center;
@@ -9,18 +9,60 @@ body {
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-img {
-  margin: 0;
-  align-items: center;
-  flex-direction: column;
+.meme {
+  position: relative;
+  width: 100%;
+  margin: auto;
 }
 
-input {
+.meme > img {
+  max-width: 80vw;
   border-radius: 20px;
-  padding: 10px 40px;
 }
 
-button {
-  padding: 5px 25px;
-  border-radius: 20px;
+.meme > h2 {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.meme > .bottom {
+  bottom: 0;
+}
+
+.meme > .top {
+  top: 0;
+}
+
+.meme-form {
+  max-width: 90vw;
+  column-gap: 10px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.meme-form > input {
+  min-width: 50px;
+  min-height: 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.meme-form > button {
+  border: none;
+  border-radius: 5px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12px;
+  color: rgb(2, 2, 2);
+  background: rgb(80, 183, 109);
 }
